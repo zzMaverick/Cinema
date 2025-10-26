@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Sessões</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Página Inicial</a>
+        <a href="cadastro-filmes.html">Cadastro de Filmes</a>
+        <a href="cadastro-salas.html">Cadastro de Salas</a>
+        <a href="cadastro-sessoes.html">Cadastro de Sessões</a>
+        <a href="venda-ingressos.html">Venda de Ingressos</a>
+        <a href="sessoes.html">Sessões Disponíveis</a>
+    </nav>
+    
+    <div class="container">
+        <h1>Cadastro de Sessões</h1>
+        
+        <form id="formSessao">
+            <label for="filme">Filme:</label>
+            <select id="filme" required></select>
+            
+            <label for="sala">Sala:</label>
+            <select id="sala" required></select>
+            
+            <label for="dataHora">Data e Hora:</label>
+            <input type="datetime-local" id="dataHora" required>
+            
+            <label for="preco">Preço:</label>
+            <input type="number" id="preco" min="0" step="0.01" required>
+            
+            <label for="idioma">Idioma:</label>
+            <select id="idioma" required>
+                <option value="">Selecione um idioma</option>
+                <option value="Dublado">Dublado</option>
+                <option value="Legendado">Legendado</option>
+            </select>
+            
+            <label for="formato">Formato:</label>
+            <select id="formato" required>
+                <option value="">Selecione um formato</option>
+                <option value="2D">2D</option>
+                <option value="3D">3D</option>
+            </select>
+            
+            <button type="submit">Salvar Sessão</button>
+        </form>
+    </div>
+    
+    <script src="sessoes.js"></script>
+</body>
+</html>

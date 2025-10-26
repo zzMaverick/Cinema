@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Sistema de Controle de Cinema</title>
+    <title>Sessões Disponíveis</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,10 +16,23 @@
     </nav>
     
     <div class="container">
-        <h1>Sistema de Controle de Cinema</h1>
-        <p>Bem-vindo ao sistema de controle de cinema. Utilize o menu acima para navegar entre as funcionalidades.</p>
+        <h1>Sessões Disponíveis</h1>
+        
+        <table id="tabelaSessoes">
+            <thead>
+                <tr>
+                    <th>Filme</th>
+                    <th>Sala</th>
+                    <th>Data e Hora</th>
+                    <th>Preço</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabelaSessoes">
+            </tbody>
+        </table>
     </div>
     
-    <script src="index.js"></script>
+    <script src="listar-sessoes.js"></script>
 </body>
 </html>
